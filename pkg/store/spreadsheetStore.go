@@ -13,7 +13,7 @@ import (
 	"google.golang.org/api/option"
 	"google.golang.org/api/sheets/v4"
 
-	"github.com/jplindgren/stock-price-monitor/pkg/stock/model"
+	"github.com/jplindgren/fic/pkg/stock/model"
 )
 
 var defaultSheet = "FICSheet"

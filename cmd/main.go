@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/jplindgren/stock-price-monitor/pkg/stock"
-	"github.com/jplindgren/stock-price-monitor/pkg/store"
+	"github.com/jplindgren/fic/pkg/stock"
+	"github.com/jplindgren/fic/pkg/store"
 )
 
 type App struct {

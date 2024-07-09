@@ -1,4 +1,4 @@
-module github.com/jplindgren/stock-price-monitor
+module github.com/jplindgren/fic
 
 go 1.22.4
 

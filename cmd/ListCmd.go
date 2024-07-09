@@ -4,7 +4,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/jplindgren/stock-price-monitor/pkg/stock/model"
+	"github.com/jplindgren/fic/pkg/stock/model"
 	"github.com/olekukonko/tablewriter"
 )
 

@@ -6,8 +6,8 @@ import (
 	"log/slog"
 	"strings"
 
-	"github.com/jplindgren/stock-price-monitor/pkg/stock/model"
-	"github.com/jplindgren/stock-price-monitor/pkg/store"
+	"github.com/jplindgren/fic/pkg/stock/model"
+	"github.com/jplindgren/fic/pkg/store"
 	"github.com/shopspring/decimal"
 )
 

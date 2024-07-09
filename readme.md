@@ -1,6 +1,7 @@
 # FIC
 
-FIC is a CLI application that allows you to set target prices to a stock and monitor if the current price is below or above the target. Currently, we followed the simplistic approach and we need to run a command to list the stocks. Later, we can extract the lib part and use it with other clients or even schedule a cron to run it everyday looking for opportunities.
+FIC is a CLI application to monitor stock prices.
+It allows users to set target prices to a stock and monitor if the current price is below or above the target. Currently, we followed the simplistic approach and we need to run a command to list the stocks. Later, we can extract the lib part and use it with other clients or even schedule a cron to run it everyday looking for opportunities.
 
 ## How it works
 
