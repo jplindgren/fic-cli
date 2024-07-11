@@ -4,7 +4,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/jplindgren/fic/pkg/stock/model"
+	"github.com/jplindgren/fic-cli/pkg/stock/model"
 	"github.com/olekukonko/tablewriter"
 )
 

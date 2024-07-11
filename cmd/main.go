@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/jplindgren/fic/pkg/stock"
-	"github.com/jplindgren/fic/pkg/store"
+	"github.com/jplindgren/fic-cli/pkg/stock"
+	"github.com/jplindgren/fic-cli/pkg/store"
 )
 
 type App struct {

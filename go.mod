@@ -1,4 +1,4 @@
-module github.com/jplindgren/fic
+module github.com/jplindgren/fic-cli
 
 go 1.22.4
 
