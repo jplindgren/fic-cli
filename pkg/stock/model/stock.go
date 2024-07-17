@@ -16,10 +16,15 @@ func (s Stock) ToString() string {
 	return fmt.Sprintf("%s, price: %s, target %s", s.Ticker, s.Price.StringFixed(2), s.Target.StringFixed(2))
 }
 
-func (s Stock) IsRecommended() (bool, string) {
+func (s Stock) Ratio() float64 {
 	fPrice, _ := s.Price.Float64()
 	fTarget, _ := s.Target.Float64()
 	ratio := fPrice / fTarget
+	return ratio
+}
+
+func (s Stock) IsRecommended() (bool, string) {
+	ratio := s.Ratio()
 
 	if ratio < 0.5 {
 		return true, Excellent

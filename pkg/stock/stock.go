@@ -1,22 +1,33 @@
 package stock
 
 import (
+	"cmp"
 	"errors"
 	"fmt"
 	"log/slog"
+	"slices"
 	"strings"
 
 	"github.com/jplindgren/fic-cli/pkg/stock/model"
-	"github.com/jplindgren/fic-cli/pkg/store"
 	"github.com/shopspring/decimal"
 )
 
 type StockService struct {
-	store store.Store
+	store Store
 }
 
 func (s *StockService) List() ([]model.Stock, error) {
-	return s.store.List()
+	stocks, err := s.store.List()
+	if err != nil {
+		return nil, err
+	}
+
+	slices.SortFunc(stocks, func(a, b model.Stock) int {
+		return cmp.Compare(a.Ratio(), b.Ratio())
+	})
+
+	return stocks, nil
+
 }
 
 func (s *StockService) Add(ticker string, target string) ([]model.Stock, error) {
@@ -43,7 +54,7 @@ func (s *StockService) DeleteStore(storeId string) error {
 	return s.store.Delete(storeId)
 }
 
-func New(store store.Store) *StockService {
+func New(store Store) *StockService {
 	return &StockService{
 		store: store,
 	}

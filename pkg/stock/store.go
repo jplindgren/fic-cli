@@ -1,4 +1,4 @@
-package store
+package stock
 
 import (
 	"github.com/jplindgren/fic-cli/pkg/stock/model"
